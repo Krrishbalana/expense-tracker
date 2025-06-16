@@ -31,4 +31,21 @@ A responsive and intuitive web application for tracking daily expenses. Built us
 ---
 
 ## 📂 Folder Structure
+Expense_tracker/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── preview.png (screenshot file)
+
+
+---
+
+## 📦 How to Use
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/Krrishbalana/expense-tracker.git
 
