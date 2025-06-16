@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f2f4fa;
+  }
+  
+  .app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background: #111;
+    color: white;
+    padding: 30px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+  }
+  
+  .profile h3 {
+    margin: 10px 0 0;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .menu li {
+    padding: 12px 0;
+    padding-left: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .menu li.active,
+  .menu li:hover {
+    background: #2c2c2c;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 40px;
+    background: white;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .expenses-header h2 {
+    margin: 0;
+  }
+  
+  .transactions {
+    margin-top: 20px;
+  }
+  
+  .transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .transaction-item .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+  }
+  
+  .icon.grocery { background: #2ec4b6; }
+  .icon.transport { background: #9c27b0; }
+  .icon.food { background: #ff6b6b; }
+  .icon.entertainment { background: #1fab89; }
+  
+  .amount {
+    font-weight: bold;
+  }
+  
+  .amount.negative {
+    color: red;
+  }
+  
+  /* Right Panel */
+  .summary {
+    width: 250px;
+    padding: 40px 20px;
+    background: #fff;
+  }
+  
+  .summary h4 {
+    margin-bottom: 20px;
+  }
+  
+  .progress-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .progress-container label {
+    font-size: 14px;
+    margin: 8px 0 2px;
+  }
+  
+  progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 8px;
+    appearance: none;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 10px;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 10px;
+  }
+  
+  .tip-box {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .tip-box img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .tip-box button {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .expense-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .expense-form input,
+  .expense-form select,
+  .expense-form button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+  }
+  
+  .expense-form button {
+    background: #111;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #transaction-list {
+    margin-top: 20px;
+  }
+  
+  .transaction {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .transaction .info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transaction .delete-btn {
+    background: #e74c3c;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+#Krish{
+    height: 100px;
+    width: 100px;
+    object-fit: cover; 
+}
+.current-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  
