@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img id="Krish" src="Krish.jpg" alt="Profile Pic" />
+        <h3>Krish</h3>
+        <p>Krrishbalana@email.com</p>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li>Dashboard</li>
+          <li class="active">Expenses</li>
+          <li>Wallets</li>
+          <li>Summary</li>
+          <li>Accounts</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="expenses-header">
+        <h2>Expenses</h2>
+        <p id="current-date" class="current-date"></p>
+
+      </div>
+
+      <!-- 💡 Expense Form (NEW) -->
+      <form id="expense-form" class="expense-form">
+        <input type="text" id="desc" placeholder="Description" required />
+        <input type="number" id="amount" placeholder="Amount" required />
+        <select id="category">
+          <option value="food">Food and Drink</option>
+          <option value="shopping">Shopping</option>
+          <option value="housing">Housing</option>
+          <option value="transport">Transportation</option>
+          <option value="vehicle">Vehicle</option>
+        </select>
+        <button type="submit">Add Expense</button>
+      </form>
+
+      <!-- 💡 Rendered Transactions (Dynamic) -->
+      <div id="transaction-list"></div>
+
+      <!-- Existing Static Transactions -->
+      <div class="transactions">
+        <h4>Today</h4>
+        <div class="transaction-item">
+          <span class="icon grocery"></span>
+          <div class="info">
+            <p>Grocery</p>
+            <small>5:12 pm - Belanja di pasar</small>
+          </div>
+          <p class="amount negative">-₹326.80</p>
+        </div>
+        <div class="transaction-item">
+          <span class="icon transport"></span>
+          <div class="info">
+            <p>Transportation</p>
+            <small>5:12 pm - Naik bus umum</small>
+          </div>
+          <p class="amount negative">-₹15.00</p>
+        </div>
+      </div>
+
+      <div class="transactions">
+        <h4>23 March 2020</h4>
+        <div class="transaction-item">
+          <span class="icon food"></span>
+          <div class="info">
+            <p>Food and Drink</p>
+            <small>5:12 pm - Makan Steak</small>
+          </div>
+          <p class="amount negative">-₹166.00</p>
+        </div>
+        <div class="transaction-item">
+          <span class="icon entertainment"></span>
+          <div class="info">
+            <p>Entertainment</p>
+            <small>5:12 pm - Nonton Bioskop</small>
+          </div>
+          <p class="amount negative">-₹35.20</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Summary Panel -->
+    <aside class="summary">
+      <h4>Where your money go?</h4>
+      <div class="progress-container">
+        <label>Food and Drink</label>
+        <progress value="874400" max="1500000"></progress>
+        <label>Shopping</label>
+        <progress value="1378200" max="1500000"></progress>
+        <label>Housing</label>
+        <progress value="928500" max="1500000"></progress>
+        <label>Transportation</label>
+        <progress value="420700" max="1500000"></progress>
+        <label>Vehicle</label>
+        <progress value="520000" max="1500000"></progress>
+      </div>
+
+      <div class="tip-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/2913/2913461.png" alt="Tips" />
+        <p>Save more money by avoiding things you don’t really need.</p>
+        <button>View Tips</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
