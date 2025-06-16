@@ -17,7 +17,7 @@ A responsive and intuitive web application for tracking daily expenses. Built us
 
 ## 📸 Screenshot
 
-![Expense Tracker UI](https://github.com/Krrishbalana/expense-tracker/blob/main/preview.png)
+![Expense Tracker UI](UI.png)
 
 ---
 
